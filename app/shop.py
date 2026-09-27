@@ -27,7 +27,9 @@ class Shop:
         customer_name: str,
         product_cart: dict[str, int | float],
     ) -> None:
-        current_time = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        current_time = datetime.datetime.now().strftime(
+            "%d/%m/%Y %H:%M:%S"
+        )
         total_cost = self.calculate_cart_cost(product_cart)
 
         print(f"Date: {current_time}")

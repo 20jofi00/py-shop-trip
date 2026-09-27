@@ -50,7 +50,7 @@ def shop_trip() -> None:
 
             print(
                 f"{customer.name}'s trip to the {shop.name} costs "
-                f"{round(trip_price, 2)}"
+                f"{trip_price:.2f}"
             )
 
             if lowest_cost > trip_price:
